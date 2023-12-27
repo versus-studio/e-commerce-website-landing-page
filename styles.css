@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Rubik+Broken+Fax&family=Rubik+Doodle+Shadow&family=Rubik+Scribble&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #333333;
+    color: #EEEEEE;
+    position: sticky;
+    top: 0;
+    transition: background-color .3s ease;
+}
+
+.blur {
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav .left-navbar {
+    float: left;
+}
+
+header nav .right-navbar {
+    float: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 20px;
+    transition: .2s ease;
+}
+
+header nav ul li:hover {
+    transform: scale(1.1);
+}
+
+header nav ul li a {
+    color: inherit;
+    padding: 5px;
+    font-size: 18px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: .3s ease-in;
+}
+
+header nav ul li a i {
+    margin: 0 5px 0;
+}
+
+header nav .logo {
+    text-decoration: none;
+    font-size: 32px;
+    color: inherit;
+    font-family: Rubik Doodle Shadow, Audiowide;
+    transition: .3s ease-out;
+}
+
+header nav .logo:hover {
+    color: #f8c600;
+}
+
+header nav ul .no-transform:hover {
+    transform: scale(1);
+}
+
+header nav ul li form .searchbar {
+    padding: 10px;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border: 2px solid transparent;
+    outline: none;
+}
+
+header nav ul li form .search-btn {
+    padding: 10px;
+    margin-left: -4px;
+    background-color: #ffffff;
+    color: #c59e02;
+    border: 2px solid transparent;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    transition: .3s ease;
+}
+
+header nav ul li form .search-btn:hover {
+    background-color: #c59302;
+    color: #EEEEEE;
+    cursor: pointer;
+}
+
+header nav ul .login-btns .btn {
+    padding: 12px;
+    background-color: #1a1a1a;
+    color: #ffcc00;
+}
+
+header nav ul .login-btns .btn:hover,
+header nav ul li a:hover {
+    color: #1a1a1a;
+    background-color: #ffcc00;
+    box-shadow: 2px 2px 10px #EEEEEE;
+    border: 2px inset #2c2c2c;
+}
+
+main {
+    display: flex column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - header - footer);
+    background-color: #2c2c2c;
+    text-align: center;
+}
+
+main .landing {
+    width: 100%;
+    height: 850px;
+    background-image: url('https://source.unsplash.com/featured/?shoes, jeans, watches, clothes, suits');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main .landing .texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+main .landing .texts h2 {
+    font-family: Rubik Broken Fax;
+    line-height: 80px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 5em;
+    color: white;
+}
+
+main .landing .texts p{
+    margin-top: 30px;
+    max-width: 650px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    line-height: 1.8em;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+main .landing .texts button{
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid transparent;
+    color: #ffcc00;
+    background-color: #1a1a1a;
+    box-shadow: 2px 2px 10px #EEEEEE;
+    transition: border .3s ease;
+}
+
+main .landing .texts button:hover{
+    color: #1a1a1a;
+    background-color: #ffcc00;
+    cursor: pointer;
+    border: 2px outset #EEEEEE;
+}
+
+main .featured-products{
+    width: 100%;
+    height: auto;
+    display: inline-flex column;
+}
+
+main .featured-products h2{
+    text-align: left;
+    color: #ffffff;
+    margin: 30px;
+    font-size: 40px;
+}
+
+main .featured-products .cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: top;
+    flex-wrap: wrap;
+}
+
+main .featured-products .cards .card{
+    width: calc((100% - 200px) / 4);
+    height: 500px;
+    margin-bottom: 20px;
+    background-color: #cccc;
+    box-shadow: 5px 5px 10px rgba(255, 217, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+    transition: all .2s ease-in-out;
+}
+
+main .featured-products .cards .card img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px dashed transparent;
+    transition: 0.2s ease;
+}
+
+
+main .featured-products .cards .card:hover img{
+    border: 2px dashed #ffffff;
+    transform: scale(1.01);
+}
+
+main .featured-products .cards .card h4{
+    width: fit-content;
+    font-size: 18px;
+    padding: 10px;
+    margin: 0 5px;
+    color: #1a1a1a;
+    transition: .2s ease;
+}
+
+main .featured-products .cards .card h4:hover{
+    background-color: #c59302;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+main .featured-products .cards .card span{
+    width: fit-content;
+    float: right;
+    font-size: 18px;
+    text-align: center;
+    color: #fefefe;
+    padding: 10px;
+    background-color: #c59302;
+    border-radius: 30px;
+    margin: 0 40px;
+}
+
+main .featured-products .cards .card a{
+    text-decoration: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 199px 210px;
+    border-radius: 10px;
+    color: #ececec;
+}
+
+main .featured-products .cards .card a::before{
+    content: '';
+    background-color: transparent;
+    outline: none;
+    padding: 20px;
+}
+
+
+main .featured-products .cards .card:hover a::before{
+    content: 'Buy';
+    background-color: #c59302;
+    padding: 20px;
+    border-radius: 80px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    background-color: #333333;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+footer .all-elements{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    gap: 70px;
+}
+
+footer .special-products, footer .social-media{
+    display: inline-flex column;
+    font-size: 28px;
+    color: inherit;
+}
+
+footer .special-products p{
+    font-size: 18px;
+    margin: 10px 10px;
+}
+
+footer .special-products form{
+    display: inline-flex;
+    align-items: center;
+    color: #fefefe;
+}
+
+footer .special-products form input{
+    outline: none;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    padding: 8px;
+    font-size: 14px;
+    margin: 5px 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+footer .special-products form button{
+    background-color: #c59302;
+    color: inherit;
+    font-size: 14px;
+    border: none;
+    padding: 8px;
+    border: 1px solid transparent;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: all .3s ease;
+}
+
+footer .special-products form button:hover{
+    background-color: #333333;
+    color: #c59302;
+    border: 1px dashed #c59302;
+    cursor: pointer;
+}
+
+footer .social-media ul{
+    display: flex;
+    list-style: none;
+    margin: 20px;
+}
+
+footer .social-media ul li{
+    padding: 0 20px;
+}
+
+footer .social-media ul li a{
+    color: inherit;
+    transition: all .3s ease;
+}
+
+footer .social-media ul li a:hover{
+    color: #c59302;
+}
+
+footer .copyright{
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1.5px;
+    color: rgba(255, 255, 255, .5);
+}

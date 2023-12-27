@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/caa13318f3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Homepage | VS-Studio</title>
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <ul class="left-navbar">
+                <li>
+                    <a href="index.html"><i class="fas fa-house"></i>Home</a>
+                </li>
+                <li>
+                    <a href="#product-page"><i class="fas fa-shirt"></i>Products</a>
+                </li>
+                <li>
+                    <a href="#about-us"><i class="fas fa-address-card"></i>About us</a>
+                </li>
+                <li>
+                    <a href="#contact-us"><i class="fas fa-address-book"></i>Contact us</a>
+                </li>
+            </ul>
+            <ul class="center-navbar">
+                <a href="index.html" class="logo">
+                    <h1>VS Studio</h1>
+                </a>
+            </ul>
+            <ul class="right-navbar">
+                <li class="no-transform">
+                    <form action="#" method="get">
+                        <input type="search" name="query" class="searchbar" placeholder="Search for products..." />
+                        <input type="submit" class="search-btn" value="Search" />
+                    </form>
+                </li>
+                <li class="login-btns no-transform">
+                    <a href="login.html" class="btn"><i class="fas fa-right-to-bracket"></i>Login/Signup</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="landing">
+            <div class="texts">
+                <h2>
+                    Your One Stop Shop for All Things Tech!
+                </h2>
+                <p>
+                    We are a team of passionate developers who love creating innovative products and services. Feel free
+                    to browse our collection or start Shpping.
+                </p>
+                <button onclick="location.href='#product-page'">Shop Now!</button>
+            </div>
+        </section>
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?t-shirt&orientation=landscape" alt="T-Shirt">
+                    <div class="details">
+                        <h4>T-Shirt</h4>
+                        <span class="price">$59.99</span>
+                    </div>
+                    <a href="#product-t-shirt"></a>
+                </div>
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?jeans&orientation=landscape" alt="Jeans">
+                    <div class="details">
+                        <h4>Jeans</h4>
+                        <span class="price">$99.99</span>
+                    </div>
+                    <a href="#product-jeans"></a>
+                </div>
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?shoes&orientation=landscape" alt="Shoes">
+                    <div class="details">
+                        <h4>Shoes</h4>
+                        <span class="price">$159.99</span>
+                    </div>
+                    <a href="#product-shoes"></a>
+                </div>
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?watches&orientation=landscape" alt="Watches">
+                    <div class="details">
+                        <h4>Watches</h4>
+                        <span class="price">$459.99</span>
+                    </div>
+                    <a href="#product-watches"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="all-elements">
+            <div class="special-products">
+                <h2>Special Offers</h2>
+                <p>Get the latest trends and special offers from our store.</p>
+                <form action="" method="post">
+                    <input type="email" name="email" placeholder="Enter your email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="social-media">
+                <h2>Follow Us</h2>
+                <ul>
+                    <li>
+                        <a href="#instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#linkdin" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>All &copy; Copyrights are reserved by VS-Studio</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
