@@ -1,6 +1,6 @@
-# Shopping Website Landing Page
+# E-commerce Website Landing Page
 
-Welcome to the "shopping-website-landing-page" repository! This project is a landing page for a fictional online shopping website, crafted with HTML, CSS, and a touch of JavaScript. It's designed to showcase products and provide a delightful user experience.
+Welcome to the "e-commerce-website-landing-page" repository! This project is a landing page for a fictional online shopping website, crafted with HTML, CSS, and a touch of JavaScript. It's designed to showcase products and provide a delightful user experience.
 
 ## Table of Contents
 
@@ -25,7 +25,7 @@ This landing page is part of a smaller e-commerce project and serves as the fron
 ## Preview of the Project:
 
    ```bash
-   https://vipul-dalal.github.io/shopping-web-landing-page/
+   https://vipul-dalal.github.io/e-commerce-website-landing-page/
    ```
 ## Getting Started
 
@@ -36,12 +36,12 @@ Follow these instructions to set up the project on your local machine.
 1. Clone the repository:
 
    ```bash
-   https://github.com/vipul-dalal/shopping-web-landing-page.git
+   https://github.com/vipul-dalal/e-commerce-website-landing-page.git
    ```
 2. Open the project directory:
 
    ```bash
-   cd shopping-website-landing-page
+   cd e-commerce-website-landing-page
    ```
 and it can be your preffered directory also.
 
