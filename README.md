@@ -22,6 +22,11 @@ This landing page is part of a smaller e-commerce project and serves as the fron
 - **Responsive Design:** Ensures a seamless experience on various screen sizes. [It's in development.]
 - **Product Showcase:** Attractive displays with images and descriptions.
 
+## Preview of the Project:
+
+   ```bash
+   https://vipul-dalal.github.io/shopping-web-landing-page/
+   ```
 ## Getting Started
 
 Follow these instructions to set up the project on your local machine.
@@ -31,14 +36,14 @@ Follow these instructions to set up the project on your local machine.
 1. Clone the repository:
 
    ```bash
-   https://vipul-dalal.github.io/shopping-web-landing-page/
+   https://github.com/vipul-dalal/shopping-web-landing-page.git
    ```
-
 2. Open the project directory:
 
    ```bash
-   https://github.com/vipul-dalal/shopping-web-landing-page.git
+   cd shopping-website-landing-page
    ```
+and it can be your preffered directory also.
 
 ## Usage
 
