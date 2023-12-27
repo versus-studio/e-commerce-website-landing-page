@@ -31,13 +31,13 @@ Follow these instructions to set up the project on your local machine.
 1. Clone the repository:
 
    ```bash
-   https://github.com/your-username/shopping-website-landing-page.git
+   https://vipul-dalal.github.io/shopping-web-landing-page/
    ```
 
 2. Open the project directory:
 
    ```bash
-   cd shopping-website-landing-page
+   https://github.com/vipul-dalal/shopping-web-landing-page.git
    ```
 
 ## Usage
