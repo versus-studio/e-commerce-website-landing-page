@@ -42,54 +42,249 @@
         </nav>
     </header>
     <main>
-        <!-- <section class="landing">
-            <div class="texts">
-                <h2>
-                    Your One Stop Shop for All Things Tech!
-                </h2>
-                <p>
-                    We are a team of passionate developers who love creating innovative products and services. Feel free
-                    to browse our collection or start Shpping.
-                </p>
-                <button onclick="location.href='#product-page'">Shop Now!</button>
+        <div class="featured-products-head">
+            <div class="product-title">
+                <h2>Products</h2>
             </div>
-        </section> -->
+            <div class="filter-bar">
+                <span class="sortby">Sort by:</span>
+                <select name="sortby" id="sortby">
+                    <option value="default" selected>Default</option>
+                    <option value="price_ascending">Price Ascending</option>
+                    <option value="price_descending">Price Descending</option>
+                </select>
+            </div>
+            <!-- <div class="prooduct-page-btn">
+                <a href="products.html" class="product-more-btn"><i class="fas fa-mitten"></i> Look More Products</a>
+            </div> -->
+        </div>
         <section class="featured-products">
-            <h2>Featured Products</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?suits&orientation=landscape" alt="T-Shirt">
+                    <div class="details-container">
+                        <div class="details">
+                            <h4>Black T-Shirt</h4>
+                            <h5>Description: <dl>
+                                Lorem ipsum dolor sit amet.
+                            </dl></h5>
+                        </div>
+                        <div class="price-btns">
+                            <a href="#cart" class="price-btn"><i class="fas fa-cart-plus"></i><span class="price">$59.99</span></a>
+                        </div>
+                    </div>
+                    <a href="#product-t-shirt" class="buy-btn"></a>
+                </div>
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?Casual&orientation=landscape" alt="Jeans">
+                    <div class="details-container">
+                        <div class="details">
+                            <h4>White Shirts</h4>
+                            <h5>Description: <dl>none</dl></h5>
+                        </div>
+                        <div class="price-btns">
+                            <a href="#cart" class="price-btn"><i class="fas fa-cart-plus"></i><span class="price">$99.99</span></a>
+                        </div>
+                    </div>
+                    <a href="#product-jeans" class="buy-btn"></a>
+                </div>
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?boots&orientation=landscape" alt="Shoes">
+                    <div class="details-container">
+                        <div class="details">
+                            <h4>Boots</h4>
+                            <h5>Description: <dl>Unisex</dl></h5>
+                        </div>
+                        <div class="price-btns">
+                            <a href="#cart" class="price-btn"><i class="fas fa-cart-plus"></i><span class="price">$159.99</span></a>
+                        </div>
+                    </div>
+                    <a href="#product-shoes" class="buy-btn"></a>
+                </div>
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?rolex-watch&orientation=landscape" alt="Watches">
+                    <div class="details-container">
+                        <div class="details">
+                            <h4>Rolex Watch</h4>
+                            <h5>Description: <dl>None</dl></h5>
+                        </div>
+                        <div class="price-btns">
+                            <a href="#cart" class="price-btn"><i class="fas fa-cart-plus"></i><span class="price">$459.99</span></a>
+                        </div>
+                    </div>
+                    <a href="#product-watches" class="buy-btn"></a>
+                </div>
+            </div>
+        </section>
+        <section class="featured-products">
             <div class="cards">
                 <div class="card">
                     <img src="https://source.unsplash.com/featured/?t-shirt&orientation=landscape" alt="T-Shirt">
-                    <div class="details">
-                        <h4>T-Shirt</h4>
-                        <h5>Lorem, ipsum.</h5>
-                        <a href="#cart" class="price-btn"><i class="fas fa-cart-plus"></i><span class="price">$59.99</span></a>
+                    <div class="details-container">
+                        <div class="details">
+                            <h4>T-Shirt</h4>
+                            <h5>Description: <dl>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, veritatis delectus, atque voluptas eveniet, voluptatibus nihil culpa doloremque amet magni rerum unde ipsa officiis cum?
+                            </dl></h5>
+                        </div>
+                        <div class="price-btns">
+                            <a href="#cart" class="price-btn"><i class="fas fa-cart-plus"></i><span class="price">$59.99</span></a>
+                        </div>
                     </div>
                     <a href="#product-t-shirt" class="buy-btn"></a>
                 </div>
                 <div class="card">
                     <img src="https://source.unsplash.com/featured/?jeans&orientation=landscape" alt="Jeans">
-                    <div class="details">
-                        <h4>Jeans</h4>
-                        <h5>Lorem, ipsum.</h5>
-                        <a href="#cart" class="price-btn"><i class="fas fa-cart-plus"></i><span class="price">$99.99</span></a>
+                    <div class="details-container">
+                        <div class="details">
+                            <h4>Jeans</h4>
+                            <h5>Description: <dl>none</dl></h5>
+                        </div>
+                        <div class="price-btns">
+                            <a href="#cart" class="price-btn"><i class="fas fa-cart-plus"></i><span class="price">$99.99</span></a>
+                        </div>
                     </div>
                     <a href="#product-jeans" class="buy-btn"></a>
                 </div>
                 <div class="card">
                     <img src="https://source.unsplash.com/featured/?shoes&orientation=landscape" alt="Shoes">
-                    <div class="details">
-                        <h4>Shoes</h4>
-                        <h5>Lorem, ipsum.</h5>
-                        <a href="#cart" class="price-btn"><i class="fas fa-cart-plus"></i><span class="price">$159.99</span></a>
+                    <div class="details-container">
+                        <div class="details">
+                            <h4>Shoes</h4>
+                            <h5>Description: <dl>Unisex</dl></h5>
+                        </div>
+                        <div class="price-btns">
+                            <a href="#cart" class="price-btn"><i class="fas fa-cart-plus"></i><span class="price">$159.99</span></a>
+                        </div>
                     </div>
                     <a href="#product-shoes" class="buy-btn"></a>
                 </div>
                 <div class="card">
                     <img src="https://source.unsplash.com/featured/?watches&orientation=landscape" alt="Watches">
-                    <div class="details">
-                        <h4>Watches</h4>
-                        <h5>Lorem, ipsum.</h5>
-                        <a href="#cart" class="price-btn"><i class="fas fa-cart-plus"></i><span class="price">$459.99</span></a>
+                    <div class="details-container">
+                        <div class="details">
+                            <h4>Watches</h4>
+                            <h5>Description: <dl>None</dl></h5>
+                        </div>
+                        <div class="price-btns">
+                            <a href="#cart" class="price-btn"><i class="fas fa-cart-plus"></i><span class="price">$459.99</span></a>
+                        </div>
+                    </div>
+                    <a href="#product-watches" class="buy-btn"></a>
+                </div>
+            </div>
+        </section>
+        <section class="featured-products">
+            <div class="cards">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?t-shirt&orientation=landscape" alt="T-Shirt">
+                    <div class="details-container">
+                        <div class="details">
+                            <h4>T-Shirt</h4>
+                            <h5>Description: <dl>
+                                amet magni rerum unde ipsa officiis cum?
+                            </dl></h5>
+                        </div>
+                        <div class="price-btns">
+                            <a href="#cart" class="price-btn"><i class="fas fa-cart-plus"></i><span class="price">$59.99</span></a>
+                        </div>
+                    </div>
+                    <a href="#product-t-shirt" class="buy-btn"></a>
+                </div>
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?jeans&orientation=landscape" alt="Jeans">
+                    <div class="details-container">
+                        <div class="details">
+                            <h4>Jeans</h4>
+                            <h5>Description: <dl>none</dl></h5>
+                        </div>
+                        <div class="price-btns">
+                            <a href="#cart" class="price-btn"><i class="fas fa-cart-plus"></i><span class="price">$99.99</span></a>
+                        </div>
+                    </div>
+                    <a href="#product-jeans" class="buy-btn"></a>
+                </div>
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?shoes&orientation=landscape" alt="Shoes">
+                    <div class="details-container">
+                        <div class="details">
+                            <h4>Shoes</h4>
+                            <h5>Description: <dl>Unisex</dl></h5>
+                        </div>
+                        <div class="price-btns">
+                            <a href="#cart" class="price-btn"><i class="fas fa-cart-plus"></i><span class="price">$159.99</span></a>
+                        </div>
+                    </div>
+                    <a href="#product-shoes" class="buy-btn"></a>
+                </div>
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?watches&orientation=landscape" alt="Watches">
+                    <div class="details-container">
+                        <div class="details">
+                            <h4>Watches</h4>
+                            <h5>Description: <dl>None</dl></h5>
+                        </div>
+                        <div class="price-btns">
+                            <a href="#cart" class="price-btn"><i class="fas fa-cart-plus"></i><span class="price">$459.99</span></a>
+                        </div>
+                    </div>
+                    <a href="#product-watches" class="buy-btn"></a>
+                </div>
+            </div>
+        </section>
+        <section class="featured-products">
+            <div class="cards">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?t-shirt&orientation=landscape" alt="T-Shirt">
+                    <div class="details-container">
+                        <div class="details">
+                            <h4>T-Shirt</h4>
+                            <h5>Description: <dl>
+                                amet magni rerum unde ipsa officiis cum?
+                            </dl></h5>
+                        </div>
+                        <div class="price-btns">
+                            <a href="#cart" class="price-btn"><i class="fas fa-cart-plus"></i><span class="price">$59.99</span></a>
+                        </div>
+                    </div>
+                    <a href="#product-t-shirt" class="buy-btn"></a>
+                </div>
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?jeans&orientation=landscape" alt="Jeans">
+                    <div class="details-container">
+                        <div class="details">
+                            <h4>Jeans</h4>
+                            <h5>Description: <dl>none</dl></h5>
+                        </div>
+                        <div class="price-btns">
+                            <a href="#cart" class="price-btn"><i class="fas fa-cart-plus"></i><span class="price">$99.99</span></a>
+                        </div>
+                    </div>
+                    <a href="#product-jeans" class="buy-btn"></a>
+                </div>
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?shoes&orientation=landscape" alt="Shoes">
+                    <div class="details-container">
+                        <div class="details">
+                            <h4>Shoes</h4>
+                            <h5>Description: <dl>Unisex</dl></h5>
+                        </div>
+                        <div class="price-btns">
+                            <a href="#cart" class="price-btn"><i class="fas fa-cart-plus"></i><span class="price">$159.99</span></a>
+                        </div>
+                    </div>
+                    <a href="#product-shoes" class="buy-btn"></a>
+                </div>
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?watches&orientation=landscape" alt="Watches">
+                    <div class="details-container">
+                        <div class="details">
+                            <h4>Watches</h4>
+                            <h5>Description: <dl>None</dl></h5>
+                        </div>
+                        <div class="price-btns">
+                            <a href="#cart" class="price-btn"><i class="fas fa-cart-plus"></i><span class="price">$459.99</span></a>
+                        </div>
                     </div>
                     <a href="#product-watches" class="buy-btn"></a>
                 </div>

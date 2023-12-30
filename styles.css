@@ -30,6 +30,7 @@ header {
     background-color: #333333;
     color: #EEEEEE;
     position: sticky;
+    z-index: 99;
     top: 0;
     transition: background-color .3s ease;
 }
@@ -79,8 +80,10 @@ header nav ul li a {
     transition: .3s ease-in;
 }
 
-header nav ul li a i {
-    margin: 0 10px;
+header nav ul li a i,
+main .featured-products .featured-products-head .product-more-btn i,
+main .featured-products .cards .card .price-btn i {
+    margin: 0 5px;
 }
 
 header nav .logo {
@@ -130,14 +133,23 @@ header nav ul li form .search-btn:hover {
     border: 2px solid #ffffff;
 }
 
-header nav ul .login-btns .btn {
+header nav ul .login-btns .btn,
+main .featured-products-head .product-more-btn {
     padding: 12px;
     background-color: #1a1a1a;
     color: #ffcc00;
     border: 2px inset #cccc;
+    text-decoration: none;
+    transition: .3s ease;
+    border-radius: 5px;
+}
+
+main .featured-products-head .product-more-btn {
+    margin: 30px;
 }
 
 header nav ul .login-btns .btn:hover,
+main .featured-products-head .product-more-btn:hover,
 header nav ul li a:hover {
     color: #1a1a1a;
     background-color: #ffcc00;
@@ -214,12 +226,44 @@ main .landing .texts button:hover{
 
 main .featured-products{
     width: 100%;
-    height: 700px;
+    height: 600px;
     display: flex;
     flex-direction: column;
 }
 
-main .featured-products h2{
+main .featured-products-head .filter-bar{
+    margin: 30px;
+    color: #fefefe;
+}
+
+main .filter-bar .sortby{
+    font-size: 1.1em;
+    margin: 0 5px;
+}
+
+main .filter-bar #sortby{
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    background-color: #333333;
+    color: #c59302;
+    border: 2px solid #c59302;
+}
+
+main .filter-bar option:hover,
+main .filter-bar option:checked{
+    background-color: #fefefe;
+}
+
+main .featured-products-head{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .featured-products-head h2{
     text-align: left;
     color: #ffffff;
     margin: 30px;
@@ -299,11 +343,6 @@ main .featured-products .cards .card h4:hover{
 
 main .featured-products .cards .card .price-btns{
     width: 40%;
-}
-
-
-main .featured-products .cards .card .price-btn i{
-    margin: 0 5px;
 }
 
 main .featured-products .cards .card .price-btn:hover{
