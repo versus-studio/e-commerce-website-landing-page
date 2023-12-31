@@ -27,11 +27,16 @@
         padding: 0 10px;
     }
     
+    main .featured-products-head .product-title, main .featured-products-head .product-page-btn {
+        width: 50%;
+    }
+    
     main .featured-products .cards .card{
         width: calc((100% - 30px) / 2);
         margin: 20px 0;
         height: 500px;
     }
+
 
     main .featured-products .cards .card img{
         height: 300px;

@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Rubik+Broken+Fax&family=Rubik+Doodle+Shadow&family=Rubik+Scribble&display=swap');
 
-* {
+html,* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body,html{
+body{
     width: 100%;
     min-height: 100vh;
     height: 100%;
+    overflow-x: hidden;
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
@@ -144,10 +145,6 @@ main .featured-products-head .product-more-btn {
     border-radius: 5px;
 }
 
-/* main .featured-products-head .product-more-btn {
-    margin: 30px;
-} */
-
 header nav ul .login-btns .btn:hover,
 main .featured-products-head .product-more-btn:hover,
 header nav ul li a:hover {
@@ -175,6 +172,11 @@ main .landing {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    animation: scroll linear forwards;
+    opacity: 0.8;
+    transform-origin: bottom;
+    animation-timeline: view();
+    animation-range: exit;
 }
 
 main .landing .texts {
@@ -184,7 +186,19 @@ main .landing .texts {
     align-items: center;
     width: inherit;
     height: inherit;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.1);
+    animation: fade-out linear;
+    animation-timeline: view();
+    animation-range: exit -20px;
+}
+
+@keyframes scroll{
+    5%{opacity: 1;}
+    95%, 100%{opacity: 0; scale: 3; z-index: -1;}
+}
+
+@keyframes fade-out{
+    to {opacity: 1;}
 }
 
 main .landing .texts h2 {
@@ -263,11 +277,6 @@ main .featured-products-head{
     padding: 20px;
     justify-content: space-between;
     align-items: center;
-}
-
-main .featured-products-head .product-title,
-main .featured-products-head .product-page-btn{
-    width: 50%;
 }
 
 main .featured-products-head h2{
