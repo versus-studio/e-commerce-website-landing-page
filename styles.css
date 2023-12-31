@@ -186,7 +186,7 @@ main .landing .texts {
     align-items: center;
     width: inherit;
     height: inherit;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.3);
     animation: fade-out linear;
     animation-timeline: view();
     animation-range: exit -20px;
