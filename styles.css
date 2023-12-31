@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-body{
+body,html{
     width: 100%;
     min-height: 100vh;
     height: 100%;
@@ -144,9 +144,9 @@ main .featured-products-head .product-more-btn {
     border-radius: 5px;
 }
 
-main .featured-products-head .product-more-btn {
+/* main .featured-products-head .product-more-btn {
     margin: 30px;
-}
+} */
 
 header nav ul .login-btns .btn:hover,
 main .featured-products-head .product-more-btn:hover,
@@ -259,19 +259,31 @@ main .filter-bar option:checked{
 main .featured-products-head{
     display: flex;
     width: 100%;
+    height: 200px;
+    padding: 20px;
     justify-content: space-between;
     align-items: center;
+}
+
+main .featured-products-head .product-title,
+main .featured-products-head .product-page-btn{
+    width: 50%;
 }
 
 main .featured-products-head h2{
     text-align: left;
     color: #ffffff;
-    margin: 30px;
     font-size: 3em;
 }
 
-main .featured-products .cards{
+main .featured-products{
+    display: flex;
+    margin: 50px 0;
     width: 100%;
+    height: auto;
+}
+main .featured-products .cards{
+    width: inherit;
     height: inherit;
     display: inline-flex;
     justify-content: space-evenly;
