@@ -35,8 +35,7 @@
         width: calc((100% - 30px) / 2);
         margin: 20px 0;
         height: 500px;
-    }
-
+    }   
 
     main .featured-products .cards .card img{
         height: 300px;
