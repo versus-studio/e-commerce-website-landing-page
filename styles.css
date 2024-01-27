@@ -492,13 +492,19 @@ footer .social-media ul li{
     padding: 0 20px;
 }
 
+footer .copyright a,
 footer .social-media ul li a{
     color: inherit;
     transition: all .3s ease;
 }
 
+footer .copyright a:hover,
 footer .social-media ul li a:hover{
     color: #c59302;
+}
+
+footer .copyright a{
+    text-decoration: none;
 }
 
 footer .copyright{
